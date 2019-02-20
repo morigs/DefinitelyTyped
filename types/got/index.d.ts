@@ -65,7 +65,7 @@ declare class StdError extends Error {
     path?: string;
     protocol?: string;
     url?: string;
-    response?: any;
+    response?: got.Response<any>;
 }
 
 declare const got: got.GotFn &
